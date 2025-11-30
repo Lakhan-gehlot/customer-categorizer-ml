@@ -1,167 +1,193 @@
+<!-- Header Banner -->
+<h1 align="center">🧠 Customer Categorizer – ML + FastAPI Project</h1>
 
-# Customer Personality Segmentation
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&size=25&center=true&vCenter=true&width=600&lines=Machine+Learning+Project;Customer+Personality+Segmentation;FastAPI+%7C+Docker+%7C+Python;End-to-End+ML+Pipeline;Built+by+Lakhan+Singh" />
+</p>
 
-## Problem statement
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-0.95-009688?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/ML-Model-orange?style=for-the-badge&logo=ai" />
+  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker" />
+</p>
 
-In this data science project, you will build a machine learning system which will be able predict the personality of the customer using machine learning algorithms. This project will be very usefull for malls, various stores and companies which are product based. Based on customer's personal details and purchase details, we can cluster them and we can predict the customer's cluster number using classification techniques.
+---
 
-## Solution Proposed
+# 📌 **Project Summary**
 
-Now the question is how to dynamically predict the cluster of the customer ?. One of the approaches which we can use of machine learning approach, where we can cluster the customer based on the details we have and predict the cluster type based on the domain knowledge and leverage previous customer data to predict the cluster.
+This is a full **end-to-end Machine Learning project** that predicts **customer personality clusters** based on their:
 
-Dataset used
- <html>
-<a href="https://github.com/entbappy/Branching-tutorial/blob/master/marketing_campaign.zip"> Dataset Link</a>
-</html>
+- Demographic data  
+- Spending behavior  
+- Purchase patterns  
+- Recency & customer lifecycle metrics  
+
+The project includes:
+
+✔ Complete ML pipeline  
+✔ K-Means clustering  
+✔ Classification for cluster prediction  
+✔ FastAPI web app  
+✔ Docker containerization  
+✔ HTML UI  
+✔ PPT project presentation  
+✔ Modular `src/` folder architecture  
+
+---
+
+# 🧩 **Tech Stack**
+
+### **🔹 Programming & ML**
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+
+### **🔹 Web Framework**
+- FastAPI  
+- Uvicorn  
+- Jinja2 Templates  
+
+### **🔹 Deployment**
+- Docker  
+- AWS / Azure ready  
+
+### **🔹 Supporting Tools**
+- Config-driven architecture  
+- Logging + exception layers  
+- Automated pipelines  
+
+---
+
+# 🗂 **Project Folder Structure**
+customer-categorizer-ml/
+│
+├── app.py # FastAPI web server
+├── Dockerfile # Docker container file
+├── requirements.txt # ML + FastAPI dependencies
+├── README.md # Project documentation
+├── setup.py # Makes src package installable
+├── ppt_customer categorizer.pptx # Project presentation
+├── .gitignore
+├── .dockerignore
+│
+├── src/
+│ ├── pipeline/ # Training + prediction pipelines
+│ ├── components/ # ML components (validation, clustering)
+│ ├── config/ # Configuration files
+│ ├── utils/ # Helper functions
+│ ├── constant/ # Application constants
+│
+├── templates/
+│ ├── customer.html # User interface
+│
+├── static/
+│ ├── css/ # Styling
+│
+├── docs/ # Project documentation
+├── flowchart/ # ML workflow diagrams
+└── notebooks/ # EDA, model experiments
 
 
+---
 
-## Tech Stack Used
+# 🧠 **Machine Learning Workflow**
 
-1. Python
-2. FastAPI
-3. Machine learning algorithms
-4. Docker
-5. MongoDB
+### **1️⃣ Data Ingestion**
+- Reads data from source  
+- Handles missing values  
+- Basic cleaning & validation  
 
-## Infrastructure required
+### **2️⃣ Data Transformation**
+- Encoding  
+- Scaling  
+- Feature engineering  
 
-1. AWS S3
-2. Azure
-3. Github Actions
+### **3️⃣ Clustering (Unsupervised)**
+- K-Means clustering  
+- Elbow method for optimal K  
+- Cluster visualization  
 
-## How to run
+### **4️⃣ Classification (Supervised)**
+- Train ML model to predict clusters  
+- Hyperparameter tuning using GridSearchCV  
 
-Before you run this project make sure you have MongoDB Atlas account and you have the shipping dataset into it.
+### **5️⃣ Prediction Pipeline**
+- Takes user input  
+- Processes through ML pipeline  
+- Outputs cluster number  
 
-Step 1. Cloning the repository.
+---
 
-```
+# 🌐 **FastAPI Web Application**
 
-git clone https://github.com/Machine-Learning-01/Customer_segmentation.git
+The project includes a beautiful frontend built using:
 
-```
+- HTML  
+- CSS  
+- FastAPI templates  
 
-Step 2. Create a conda environment.
+### ⭐ Endpoints
 
-```
+| Method | Route | Description |
+|--------|--------|--------------|
+| GET | `/` | Load input form |
+| POST | `/` | Predict customer cluster |
+| GET | `/train` | Train ML model |
 
-conda create --prefix venv python=3.7 -y
+---
 
-```
+# ▶️ **How to Run the Project**
 
-```
+## **Option 1 — Run Locally**
 
-conda activate venv/
+### **1️⃣ Clone the repo**
+```bash
+git clone https://github.com/Lakhan-gehlot/customer-categorizer-ml.git
+cd customer-categorizer-ml
 
-```
-
-Step 3. Install the requirements
-
-```
-
+2️⃣ Install dependencies
 pip install -r requirements.txt
 
-```
-
-Step 4. Export the environment variable
-
-```bash
-
-export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
-
-
-export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
-
-
-export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
-
-
-export MONGODB_URL= <MONGODB_URL>
-
-
-```
-
-Step 5. Run the application server
-
-```
-
+3️⃣ Run FastAPI
 python app.py
 
-```
+4️⃣ Open browser
+http://localhost:8000/
 
-Step 6. Train application
+Option 2 — Run with Docker
+1️⃣ Build image
+docker build -t customer-app .
 
-```bash
+2️⃣ Run container
+docker run -p 8000:8000 customer-app
 
-http://localhost:5000/train
+📊 Project Screenshots (Add later)
+<p align="center">
+  <img src="assets/demo.gif" width="600">
+</p>
 
-```
+🎯 Business Use Cases
 
-Step 7. Prediction application
+✔ Customer segmentation
+✔ Targeted marketing
+✔ Personalized offers
+✔ Cross-selling
+✔ Customer retention analysis
 
-```bash
+🎓 Project Presentation (PPT)
 
-http://localhost:5000/predict
+📌 Download the PPT:
+👉 ppt_customer categorizer.pptx
 
-```
+👨‍💻 Author
 
-## Run locally
+Lakhan Singh
+📍 India
+🔗 LinkedIn: https://www.linkedin.com/in/lakhansingh-dataanalyst/
 
-1. Check if the Dockerfile is available in the project directory
-2. Build the Docker image
+🐙 GitHub: https://github.com/Lakhan-gehlot
 
-```
-
-docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> --build-arg AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION> --build-arg MONGODB_URL=<MONGODB_URL> . 
-
-```
-
-3. Run the Docker image
-
-```
-
-docker run -d -p 5000:5000 <IMAGE_NAME>
-
-```
-
-## Project Architecture -
-
-![WhatsApp Image 2022-09-22 at 15 29 19](https://user-images.githubusercontent.com/71321529/192722336-54016f79-89ef-4c8c-9d71-a6e91ebab03f.jpeg)
-
-## Data Collection Architecture -
-
-![WhatsApp Image 2022-09-22 at 15 29 10](https://user-images.githubusercontent.com/71321529/192721926-de265f9b-f301-4943-ac7d-948bff7be9a0.jpeg)
-
-## Deployment Architecture -
-
-![deployment](https://user-images.githubusercontent.com/104005791/199660875-c8e63457-432a-44cb-8a95-800870f3da15.png)
-
-## Models Used
-
-* [K-Means](https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning)
-* [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
-
-From these above models after hyperparameter optimization we selected these two models which were K-Means for clustering and Logistic Regression for classification and used the following in Pipeline.
-
-* GridSearchCV is used for Hyperparameter Optimization in the pipeline.
-
-## `src` is the main package folder which contains
-
-**Components** : Contains all components of Machine Learning Project
-
-- Data Ingestion
-- Data Validation
-- Data Transformation
-- Data Clustering
-- Model Trainer
-- Model Evaluation
-- Model Pusher
-
-**Custom Logger and Exceptions** are used in the Project for better debugging purposes.
-
-## Conclusion
-
-- This Project can be used in real-life by Users.
-
-
+<p align="center"> ⭐ If you like this project, please give it a star — it motivates me to build more! </p> ```
