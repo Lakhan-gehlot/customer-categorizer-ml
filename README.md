@@ -146,6 +146,7 @@ customer-categorizer-ml/
 ```bash
 git clone https://github.com/Lakhan-gehlot/customer-categorizer-ml
 cd customer-categorizer-ml
+
 2️⃣ Install dependencies
 pip install -r requirements.txt
 
@@ -162,13 +163,10 @@ docker build -t customer-app .
 2️⃣ Run
 docker run -p 8000:8000 customer-app
 
-📊 Visuals & Demo 
-You can add screenshots like this:
-
+📊 Visuals & Demo
 <p align="center">
   <img src="assets/demo.png" width="650">
 </p>
-
 🎯 Business Use Cases
 
 Customer segmentation
