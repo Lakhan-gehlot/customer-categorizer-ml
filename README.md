@@ -1,153 +1,151 @@
-<!-- Header Banner -->
 <h1 align="center">🧠 Customer Categorizer – ML + FastAPI Project</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&size=25&center=true&vCenter=true&width=600&lines=Machine+Learning+Project;Customer+Personality+Segmentation;FastAPI+%7C+Docker+%7C+Python;End-to-End+ML+Pipeline;Built+by+Lakhan+Singh" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00E5FF&size=25&center=true&vCenter=true&width=600&lines=Customer+Personality+Segmentation;Machine+Learning+Project;FastAPI+Web+App;End-to-End+ML+Pipeline;Built+by+Lakhan+Singh" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/FastAPI-0.95-009688?style=for-the-badge&logo=fastapi" />
-  <img src="https://img.shields.io/badge/ML-Model-orange?style=for-the-badge&logo=ai" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Project-orange?style=for-the-badge&logo=ai" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker" />
 </p>
 
 ---
 
-# 📌 **Project Summary**
+# 📌 Project Summary
 
-This is a full **end-to-end Machine Learning project** that predicts **customer personality clusters** based on their:
+This is a full **end-to-end Machine Learning system** that predicts the *customer’s personality cluster* based on:
 
-- Demographic data  
-- Spending behavior  
-- Purchase patterns  
-- Recency & customer lifecycle metrics  
+- Demographics  
+- Spending habits  
+- Purchase history  
+- Lifestyle metrics  
 
-The project includes:
+🎯 **Goal:** Help businesses target customers with personalized marketing & improve retention.
 
-✔ Complete ML pipeline  
-✔ K-Means clustering  
-✔ Classification for cluster prediction  
-✔ FastAPI web app  
-✔ Docker containerization  
-✔ HTML UI  
-✔ PPT project presentation  
-✔ Modular `src/` folder architecture  
+This project includes:
+
+✅ ML pipeline (Clustering + Classification)  
+✅ FastAPI Web App  
+✅ HTML + CSS UI  
+✅ Docker container  
+✅ Detailed PPT included  
+✅ Clean modular architecture  
+✅ Notebook + flowcharts + documentation  
 
 ---
 
-# 🧩 **Tech Stack**
+# 🔗 Live Repository
 
-### **🔹 Programming & ML**
+👉 **Repo Link:**  
+https://github.com/Lakhan-gehlot/customer-categorizer-ml
+
+---
+
+# 🎓 Project Presentation (PPT)
+
+📌 **Download PPT:**  
+👉 [Customer Categorizer Project PPT](./ppt_customer_categorizer.pptx)
+
+---
+
+# 🧩 Tech Stack
+
+### 🟦 **Languages + ML**
 - Python  
 - Pandas, NumPy  
-- Scikit-learn  
 - Matplotlib, Seaborn  
+- Scikit-learn  
 
-### **🔹 Web Framework**
+### 🟩 **Backend**
 - FastAPI  
 - Uvicorn  
 - Jinja2 Templates  
 
-### **🔹 Deployment**
+### 🐳 **Deployment**
 - Docker  
-- AWS / Azure ready  
+- AWS/Azure ready  
 
-### **🔹 Supporting Tools**
-- Config-driven architecture  
-- Logging + exception layers  
-- Automated pipelines  
+### 🧰 **Utilities**
+- Config-driven code  
+- Modular folder architecture  
+- Logging & exception handling  
 
 ---
 
-# 🗂 **Project Folder Structure**
+# 🗂 Project Folder Structure
+
 customer-categorizer-ml/
 │
-├── app.py # FastAPI web server
-├── Dockerfile # Docker container file
-├── requirements.txt # ML + FastAPI dependencies
-├── README.md # Project documentation
-├── setup.py # Makes src package installable
-├── ppt_customer categorizer.pptx # Project presentation
-├── .gitignore
-├── .dockerignore
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── setup.py
+├── README.md
+├── ppt_customer_categorizer.pptx
 │
 ├── src/
-│ ├── pipeline/ # Training + prediction pipelines
-│ ├── components/ # ML components (validation, clustering)
-│ ├── config/ # Configuration files
-│ ├── utils/ # Helper functions
-│ ├── constant/ # Application constants
+│ ├── pipeline/
+│ ├── components/
+│ ├── utils/
+│ ├── config/
+│ ├── constant/
 │
 ├── templates/
-│ ├── customer.html # User interface
+│ └── customer.html
 │
 ├── static/
-│ ├── css/ # Styling
+│ └── css/
 │
-├── docs/ # Project documentation
-├── flowchart/ # ML workflow diagrams
-└── notebooks/ # EDA, model experiments
-
-
----
-
-# 🧠 **Machine Learning Workflow**
-
-### **1️⃣ Data Ingestion**
-- Reads data from source  
-- Handles missing values  
-- Basic cleaning & validation  
-
-### **2️⃣ Data Transformation**
-- Encoding  
-- Scaling  
-- Feature engineering  
-
-### **3️⃣ Clustering (Unsupervised)**
-- K-Means clustering  
-- Elbow method for optimal K  
-- Cluster visualization  
-
-### **4️⃣ Classification (Supervised)**
-- Train ML model to predict clusters  
-- Hyperparameter tuning using GridSearchCV  
-
-### **5️⃣ Prediction Pipeline**
-- Takes user input  
-- Processes through ML pipeline  
-- Outputs cluster number  
+├── notebooks/
+├── flowchart/
+└── docs/
 
 ---
 
-# 🌐 **FastAPI Web Application**
+# 🧠 Machine Learning Workflow
 
-The project includes a beautiful frontend built using:
+### **1️⃣ Data Preparation**
+- Data ingestion  
+- Handling missing values  
+- Categorical encoding  
+- Feature scaling  
 
-- HTML  
-- CSS  
-- FastAPI templates  
+### **2️⃣ Clustering (K-Means)**
+- Find optimal `k` using Elbow Method  
+- Visualize clusters  
+- Assign cluster labels  
 
-### ⭐ Endpoints
+### **3️⃣ Classification**
+- Train classifier to predict clusters  
+- Hyperparameter optimization  
+- Evaluate using metrics  
+
+### **4️⃣ Prediction Pipeline**
+- Accepts customer inputs from UI  
+- Passes through preprocessing pipeline  
+- Predicts cluster label  
+
+---
+
+# 🌐 FastAPI Web Application Routes
 
 | Method | Route | Description |
-|--------|--------|--------------|
-| GET | `/` | Load input form |
-| POST | `/` | Predict customer cluster |
-| GET | `/train` | Train ML model |
+|--------|--------|-------------|
+| GET | `/` | Loads input form UI |
+| POST | `/` | Predict cluster |
+| GET | `/train` | Train the ML pipeline |
 
 ---
 
-# ▶️ **How to Run the Project**
+# ▶️ How to Run Locally
 
-## **Option 1 — Run Locally**
-
-### **1️⃣ Clone the repo**
+### **1️⃣ Clone repo**
 ```bash
-git clone https://github.com/Lakhan-gehlot/customer-categorizer-ml.git
+git clone https://github.com/Lakhan-gehlot/customer-categorizer-ml
 cd customer-categorizer-ml
-
 2️⃣ Install dependencies
 pip install -r requirements.txt
 
@@ -157,30 +155,31 @@ python app.py
 4️⃣ Open browser
 http://localhost:8000/
 
-Option 2 — Run with Docker
-1️⃣ Build image
+🐳 Run Using Docker
+1️⃣ Build
 docker build -t customer-app .
 
-2️⃣ Run container
+2️⃣ Run
 docker run -p 8000:8000 customer-app
 
-📊 Project Screenshots (Add later)
+📊 Visuals & Demo 
+You can add screenshots like this:
+
 <p align="center">
-  <img src="assets/demo.gif" width="600">
+  <img src="assets/demo.png" width="650">
 </p>
 
 🎯 Business Use Cases
 
-✔ Customer segmentation
-✔ Targeted marketing
-✔ Personalized offers
-✔ Cross-selling
-✔ Customer retention analysis
+Customer segmentation
 
-🎓 Project Presentation (PPT)
+Personalised marketing
 
-📌 Download the PPT:
-👉 ppt_customer categorizer.pptx
+Customer lifetime value analysis
+
+Offer targeting
+
+Upsell / Cross-sell optimisation
 
 👨‍💻 Author
 
@@ -190,4 +189,4 @@ Lakhan Singh
 
 🐙 GitHub: https://github.com/Lakhan-gehlot
 
-<p align="center"> ⭐ If you like this project, please give it a star — it motivates me to build more! </p> ```
+<p align="center"> ⭐ If you like this project, consider giving it a star! </p> ```
